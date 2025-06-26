@@ -1,0 +1,30 @@
+DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <style>     body { font-family: Arial; text-align: center; margin: 50px; }
+    .question { margin-bottom: 20px; }     button { margin: 10px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h2>JavaScript Quiz</h2>
+  <div id="quiz"></div>
+  <p id="result"></p>
+  <script>     const quiz = [
+      { q: "HTML stands for?", options: ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup"], a: 0 },
+      { q: "CSS is used for?", options: ["Data storage", "Styling", "Logic"], a: 1 },
+    ];
+    let index = 0, score = 0;     function loadQuestion() {       if (index >= quiz.length) {         document.getElementById("quiz").innerHTML = "Quiz Completed!";         document.getElementById("result").innerText = `Your Score: ${score}/${quiz.length}`;         return;
+      }
+      const q = quiz[index];       let html = `<div class="question"><h3>${q.q}</h3>`;       q.options.forEach((opt, i) => {         html += `<button onclick="checkAnswer(${i})">${opt}</button>`;
+      });
+      html += "</div>";       document.getElementById("quiz").innerHTML = html;
+    }
+    function checkAnswer(i) {       if (i === quiz[index].a) {         alert("Correct!");         score++;       } else {         alert("Wrong!");
+      }
+      index++;       loadQuestion();
+    }
+    loadQuestion();
+  </script>
+</body>
+</html>
