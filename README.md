@@ -6,3 +6,5 @@
 Image](https://github.com/user-attachments/assets/e6597b1f-534a-4539-83e9-7a093e827ffb)
 [Image](https://github.com/user-attachments/assets/1ae502d8-f513-4c48-b660-e824d9eebb66)
 [Image](https://github.com/user-attachments/assets/91ca2569-380b-4b58-8d09-bc8a9596351c)
+# output
+Image](https://github.com/user-attachments/assets/1ae502d8-f513-4c48-b660-e824d9eebb66)
